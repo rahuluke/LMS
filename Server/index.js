@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// ✅ CORS FIRST
+
 app.use(
   cors({
     origin: "https://lms-o0og.onrender.com",
