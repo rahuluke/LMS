@@ -22,7 +22,7 @@ const CourseTab = () => {
   const getCourseById = async () => {
     try {
       const res = await axios.get(
-        `https://lms-nswg.onrender.com/api/v1/course/${id}`,
+        `https://lms-o0og.onrender.com/api/v1/course/${id}`,
         {
           withCredentials: true,
         },
