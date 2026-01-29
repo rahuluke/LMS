@@ -26,7 +26,7 @@ const signup = () => {
     (e.preventDefault(), console.log(user));
     try {
       const response = await axios.post(
-        "http://localhost:8000/api/v1/user/register",
+        "https://lms-o0og.onrender.com/api/v1/user/register",
         user,
         {
           headers: {

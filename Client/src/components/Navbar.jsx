@@ -16,9 +16,12 @@ const Navbar = () => {
 
   const logoutHandler = async (e) => {
     try {
-      const res = await axios.get("http://localhost:8000/api/v1/user/logout", {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        "https://lms-o0og.onrender.com/api/v1/user/logout",
+        {
+          withCredentials: true,
+        },
+      );
       if (res.data.success) {
         dispatch(setUser(null));
         toast.success(res.data.message);

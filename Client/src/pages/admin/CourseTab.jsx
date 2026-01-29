@@ -21,9 +21,12 @@ const CourseTab = () => {
 
   const getCourseById = async () => {
     try {
-      const res = await axios.get(`http://localhost:8000/api/v1/course/${id}`, {
-        withCredentials: true,
-      });
+      const res = await axios.get(
+        `https://lms-nswg.onrender.com/api/v1/course/${id}`,
+        {
+          withCredentials: true,
+        },
+      );
       if (res.data.success) {
         {
           setSelectedCourse;
@@ -87,7 +90,7 @@ const CourseTab = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `http://localhost:8000/api/v1/course/${id}`,
+        `https://lms-nswg.onrender.com/api/v1/course/${id}`,
         formData,
         {
           headers: {
@@ -111,7 +114,7 @@ const CourseTab = () => {
   const togglePublishUnpublish = async (action) => {
     try {
       const res = await axios.patch(
-        `http://localhost:8000/api/v1/course/${id}`,
+        `https://lms-nswg.onrender.com/api/v1/course/${id}`,
         {
           params: {
             action,

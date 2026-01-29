@@ -4,37 +4,6 @@ import axios from "axios";
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
-export const coursesjsone = [
-  {
-    title: "Web Development Bootcamp",
-    description:
-      "Learn HTML, CSS, JavaScript, and modern frameworks to build responsive websites from scratch.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    price: 199.99,
-  },
-  {
-    title: "UI/UX Design Fundamentals",
-    description:
-      "Master design principles, wireframing, prototyping, and user-centered design techniques.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    price: 149.99,
-  },
-  {
-    title: "Python for Beginners",
-    description:
-      "A beginner-friendly course covering Python basics, data types, loops, and functions.",
-    image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    price: 129.99,
-  },
-  {
-    title: "Digital Marketing Essentials",
-    description:
-      "Learn SEO, social media marketing, content strategy, and online advertising fundamentals.",
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    price: 99.99,
-  },
-];
-
 const Courses = () => {
   const dispatch = useDispatch();
   const { course } = useSelector((store) => store.course);

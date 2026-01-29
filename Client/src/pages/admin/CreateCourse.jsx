@@ -18,7 +18,7 @@ const CreateCourse = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:8000/api/v1/course/",
+        "https://lms-o0og.onrender.com/api/v1/course/",
         { courseTitle, category },
         {
           headers: {

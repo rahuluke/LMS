@@ -200,16 +200,16 @@
 
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { setLecture } from "../../redux/lectureSlice";
-import { Loader2 } from "lucide-react";
+// import { Loader2 } from "lucide-react";
 
 const LectureTab = () => {
   const { courseId } = useParams();
   const dispatch = useDispatch();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
 
   const { lecture } = useSelector((store) => store.lecture);
   const [lectureTitle, setLectureTitle] = useState("");
@@ -240,7 +240,7 @@ const LectureTab = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:8000/api/v1/media/upload-video",
+        "https://lms-nswg.onrender.com/api/v1/media/upload-video",
         formData,
         {
           onUploadProgress: ({ loaded, total }) =>
@@ -279,7 +279,7 @@ const LectureTab = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `http://localhost:8000/api/v1/course/${courseId}/lecture/${lectureItem._id}`,
+        `https://lms-nswg.onrender.com/api/v1/course/${courseId}/lecture/${lectureItem._id}`,
         data,
         {
           headers: { "Content-Type": "application/json" },
@@ -312,7 +312,7 @@ const LectureTab = () => {
     try {
       setRemoveLoading(true);
       const res = await axios.delete(
-        `http://localhost:8000/api/v1/course/lecture/${lectureItem._id}`,
+        `https://lms-nswg.onrender.com/api/v1/course/lecture/${lectureItem._id}`,
         { withCredentials: true },
       );
 
