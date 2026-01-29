@@ -90,7 +90,7 @@ const CourseTab = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `https://lms-nswg.onrender.com/api/v1/course/${id}`,
+        `https://lms-o0og.onrender.com/api/v1/course/${id}`,
         formData,
         {
           headers: {
@@ -114,7 +114,7 @@ const CourseTab = () => {
   const togglePublishUnpublish = async (action) => {
     try {
       const res = await axios.patch(
-        `https://lms-nswg.onrender.com/api/v1/course/${id}`,
+        `https://lms-o0og.onrender.com/api/v1/course/${id}`,
         {
           params: {
             action,
