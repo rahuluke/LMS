@@ -22,7 +22,7 @@ app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(
   cors({
-    origin: "https://lms-nswg.onrender.com",
+    origin: "https://lms-o0og.onrender.com",
     credentials: true,
   }),
 );
