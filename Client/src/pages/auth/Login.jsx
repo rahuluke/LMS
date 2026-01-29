@@ -27,7 +27,7 @@ const login = () => {
     e.preventDefault();
     console.log(input);
     try {
-      const response = await axios.post("user/login", input, {
+      const response = await axios.post("https://lms-o0og.onrender.com/api/v1/user/login", input, {
         headers: {
           "Content-Type": "application/json",
         },
