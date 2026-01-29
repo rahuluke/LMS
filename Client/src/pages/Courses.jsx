@@ -11,7 +11,7 @@ const Courses = () => {
     const getAllPublishedCourse = async () => {
       try {
         const res = await axios.get(
-          `https://lms-nswg.onrender.com/api/v1/course/published-courses`,
+          `https://lms-o0og.onrender.com/api/v1/course/published-courses`,
           { withCredentials: true },
         );
         if (res.data.success) {
