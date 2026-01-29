@@ -15,7 +15,7 @@ const CourseDetails = () => {
     const getCourseLecture = async () => {
       try {
         const res = await axios.get(
-          `https://lms-nswg.onrender.com/api/v1/course/${courseId}/lecture`,
+          `https://lms-o0og.onrender.com/api/v1/course/${courseId}/lecture`,
           { withCredentials: true },
         );
         if (res.data.success) {
