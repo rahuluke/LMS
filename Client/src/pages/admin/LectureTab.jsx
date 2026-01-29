@@ -240,7 +240,7 @@ const LectureTab = () => {
 
     try {
       const res = await axios.post(
-        "https://lms-nswg.onrender.com/api/v1/media/upload-video",
+        "https://lms-o0og.onrender.com/api/v1/media/upload-video",
         formData,
         {
           onUploadProgress: ({ loaded, total }) =>
@@ -279,7 +279,7 @@ const LectureTab = () => {
     try {
       setLoading(true);
       const res = await axios.put(
-        `https://lms-nswg.onrender.com/api/v1/course/${courseId}/lecture/${lectureItem._id}`,
+        `https://lms-o0og.onrender.com/api/v1/course/${courseId}/lecture/${lectureItem._id}`,
         data,
         {
           headers: { "Content-Type": "application/json" },
@@ -312,7 +312,7 @@ const LectureTab = () => {
     try {
       setRemoveLoading(true);
       const res = await axios.delete(
-        `https://lms-nswg.onrender.com/api/v1/course/lecture/${lectureItem._id}`,
+        `https://lms-o0og.onrender.com/api/v1/course/lecture/${lectureItem._id}`,
         { withCredentials: true },
       );
 
