@@ -20,7 +20,7 @@ const CreateLecture = () => {
     try {
       setLoading(true);
       const res = await axios.post(
-        `https://lms-nswg.onrender.com/api/v1/course/${params?.courseId}/lecture`,
+        `https://lms-o0og.onrender.com/api/v1/course/${params?.courseId}/lecture`,
         { lectureTitle },
         {
           headers: {
