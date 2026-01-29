@@ -1,6 +1,5 @@
-import React, { Children } from "react";
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/Home";
 import Courses from "./pages/Courses";
